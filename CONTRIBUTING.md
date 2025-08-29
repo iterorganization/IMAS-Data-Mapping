@@ -32,7 +32,7 @@ to check if someone already created a similar issue;
 2. if not, make a **new issue** to describe your problem or question. 
 In the case of a bug suspiscion in the mapping, please try to give all the relevant 
 information to allow reproducing the error or identifying its root cause (IDS, device, mapping tool, etc...);
-3. apply relevant labels to the issue.
+3. tag the contact person for this device and apply relevant labels to the issue.
 
 
 While we will try to answer questions quickly and to address issues in a timely 

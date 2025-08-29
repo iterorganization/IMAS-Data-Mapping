@@ -12,6 +12,6 @@ first take look at the [contribution guidelines](CONTRIBUTING.md).
 
 ## Tokamak data mapping status :construction:
 
-| Experiment | Contact person    | Mapping information      | List of mapped IDSs |
-|:----------:|:-----------------:|:-------------------------|:--------------------|
-| ITER       | @MasanariHosokawa | only machine description | `bolometer`, `camera_visible`, `coils_non_axisymmetric`, `ec_launcher`, `ece`, `ic_antennas`, `interferometer`, `magnetics`, `nbi`, `neutron_diagnostic`, `pf_active`, `pf_passive`, `polarimeter`, `refractometer`, `spectrometer_visible`, `spectrometer_x_ray_crystal`, `soft_x_rays`, `tf`, `thomson_scattering`, `wall` |
+| Experiment | Contact person | Mapping information | List of mapped IDSs |
+|:----------:|:--------------:|:--------------------|:--------------------|
+| ITER | [@MasanariHosokawa](https://github.com/MasanariHosokawa) | only machine description | `bolometer`, `camera_visible`, `coils_non_axisymmetric`, `ec_launcher`, `ece`, `ic_antennas`, `interferometer`, `magnetics`, `nbi`, `neutron_diagnostic`, `pf_active`, `pf_passive`, `polarimeter`, `refractometer`, `spectrometer_visible`, `spectrometer_x_ray_crystal`, `soft_x_rays`, `tf`, `thomson_scattering`, `wall` |
