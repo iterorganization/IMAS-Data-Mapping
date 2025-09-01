@@ -15,4 +15,5 @@ first take look at the [contribution guidelines](CONTRIBUTING.md).
 | Experiment | Contact person | Mapping information | List of mapped IDSs |
 |:----------:|:--------------:|:--------------------|:--------------------|
 | AUG | [@DavidPCoster](https://github.com/DavidPCoster) | from `trview` and `readaug` | `core_profiles`, `dataset_description`, `equilibrium`, `ic_antennas`, `magnetics`, `nbi`, `pf_active`, `pulse_schedule`, `summary`, `tf`, `wall` |
+| DIII-D | tdb | with [OMAS](https://github.com/gafusion/omas) | tbd |
 | ITER | [@MasanariHosokawa](https://github.com/MasanariHosokawa) | only machine description | `bolometer`, `camera_visible`, `coils_non_axisymmetric`, `ec_launcher`, `ece`, `ic_antennas`, `interferometer`, `magnetics`, `nbi`, `neutron_diagnostic`, `pf_active`, `pf_passive`, `polarimeter`, `refractometer`, `spectrometer_visible`, `spectrometer_x_ray_crystal`, `soft_x_rays`, `tf`, `thomson_scattering`, `wall` |
