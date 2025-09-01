@@ -16,3 +16,4 @@ first take look at the [contribution guidelines](CONTRIBUTING.md).
 |:----------:|:--------------:|:--------------------|:--------------------|
 | AUG | [@DavidPCoster](https://github.com/DavidPCoster) | from `trview` and `readaug` | `core_profiles`, `dataset_description`, `equilibrium`, `ic_antennas`, `magnetics`, `nbi`, `pf_active`, `pulse_schedule`, `summary`, `tf`, `wall` |
 | ITER | [@MasanariHosokawa](https://github.com/MasanariHosokawa) | only machine description | `bolometer`, `camera_visible`, `coils_non_axisymmetric`, `ec_launcher`, `ece`, `ic_antennas`, `interferometer`, `magnetics`, `nbi`, `neutron_diagnostic`, `pf_active`, `pf_passive`, `polarimeter`, `refractometer`, `spectrometer_visible`, `spectrometer_x_ray_crystal`, `soft_x_rays`, `tf`, `thomson_scattering`, `wall` |
+| SST1 | [@aksinghh](https://github.com/aksinghh) | manual mapping | `magnetics`, `pf_active`, `pf_passive` |
