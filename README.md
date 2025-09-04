@@ -15,5 +15,5 @@ first take look at the [contribution guidelines](CONTRIBUTING.md).
 | Experiment | Contact person | Mapping information | List of mapped IDSs |
 |:----------:|:--------------:|:--------------------|:--------------------|
 | AUG | [@DavidPCoster](https://github.com/DavidPCoster) | from `trview` and `readaug` | `core_profiles`, `dataset_description`, `equilibrium`, `ic_antennas`, `magnetics`, `nbi`, `pf_active`, `pulse_schedule`, `summary`, `tf`, `wall` |
-| DIII-D | tdb | with [OMAS](https://github.com/gafusion/omas) | tbd |
+| DIII-D | [@AreWeDreaming](https://github.com/AreWeDreaming) | with [OMAS](https://github.com/gafusion/omas) | `bolometer`, `charge_exchange`, `coils_non_axisymmetric`, `core_profiles`, `dataset_description`, `ec_launchers`, `ece`, `em_coupling`, `equilibrium`, `gas_injection`, `interferometer`, `langmuir_probes`, `magnetics`, `mse`, `nbi`, `neutron_diagnostics`, `pf_active`, `summary`, `thomson_scattering`, `tf`, `wall` |
 | ITER | [@MasanariHosokawa](https://github.com/MasanariHosokawa) | only machine description | `bolometer`, `camera_visible`, `coils_non_axisymmetric`, `ec_launcher`, `ece`, `ic_antennas`, `interferometer`, `magnetics`, `nbi`, `neutron_diagnostic`, `pf_active`, `pf_passive`, `polarimeter`, `refractometer`, `spectrometer_visible`, `spectrometer_x_ray_crystal`, `soft_x_rays`, `tf`, `thomson_scattering`, `wall` |
