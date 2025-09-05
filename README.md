@@ -2,11 +2,14 @@
 
 In this project we will keep track of the latest status, updates and issues on the mapping of various experiments 
 to the [IMAS-Data-Dictionary](https://github.com/iterorganization/IMAS-Data-Dictionary) convention.
-Whenever possible, we will also try to share pointers to open-accessible dataset examples, to allow code testing 
-for various tokamak configurations. 
+
+Whenever possible, we will also try to share pointers to open-accessible dataset examples, to allow code testing for various tokamak configurations. 
+
+You can find some additional resources and information on our regular online discussion meetings in the [wiki](https://github.com/iterorganization/IMAS-Data-Mapping/wiki).
 
 If you want to update the information for a given experiment or if you find issues in the mapped data, please 
 first take look at the [contribution guidelines](CONTRIBUTING.md).
+
 
 
 
