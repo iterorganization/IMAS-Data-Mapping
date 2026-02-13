@@ -17,7 +17,7 @@ first take look at the [contribution guidelines](CONTRIBUTING.md).
 
 | Experiment | Contact person | Mapping information | List of mapped IDSs |
 |:----------:|:--------------:|:--------------------|:--------------------|
-| AUG | [@DavidPCoster](https://github.com/DavidPCoster) | from `trview` and `readaug` | `core_profiles`, `dataset_description`, `equilibrium`, `ic_antennas`, `magnetics`, `nbi`, `pf_active`, `pulse_schedule`, `summary`, `tf`, `wall` |
+| AUG | [@DavidPCoster](https://github.com/DavidPCoster) | from `trview` and `readaug` | `core_profiles`, `core_sources`, `dataset_description`, `distributions`, `ec_launchers`, `equilibrium`, `ic_antennas`, `magnetics`, `nbi`, `pf_active`, `pulse_schedule`, `summary`, `tf`, `wall`, `waves` |
 | DIII-D | [@AreWeDreaming](https://github.com/AreWeDreaming) | with [OMAS](https://github.com/gafusion/omas) | `bolometer`, `charge_exchange`, `coils_non_axisymmetric`, `core_profiles`, `dataset_description`, `ec_launchers`, `ece`, `em_coupling`, `equilibrium`, `gas_injection`, `interferometer`, `langmuir_probes`, `magnetics`, `mse`, `nbi`, `neutron_diagnostics`, `pf_active`, `summary`, `thomson_scattering`, `tf`, `wall` |
 | EAST | [@simpla-fusion](https://github.com/simpla-fusion) | with [FyTok](https://github.com/fusion-yun/fytok) |`core_profiles`,  `equilibrium`, `magnetics`,  `pf_active`,  `tf`, `wall` |
 | EAST | [@jenuis](https://github.com/jenuis) | with [EAST2IMAS](https://github.com/jenuis/east2imas) | `langmuir_probes`, `ece`, `interferometer`, `reflectometer_profile`, `summary`|
