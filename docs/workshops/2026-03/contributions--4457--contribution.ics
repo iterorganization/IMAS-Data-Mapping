@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CERN//INDICO//EN
+BEGIN:VEVENT
+SUMMARY:IMAS-Composer
+DTSTART:20260317T103000Z
+DTEND:20260317T110000Z
+DTSTAMP:20261109T104200Z
+UID:indico-contribution-4457@indico.iter.org
+DESCRIPTION:Speakers: Severin Denk\n\nhttps://indico.iter.org/event/732/co
+ ntributions/4457/
+LOCATION:72/3017 (ITER Organization)
+RELATED-TO:indico-event-732@indico.iter.org
+URL:https://indico.iter.org/event/732/contributions/4457/
+END:VEVENT
+END:VCALENDAR

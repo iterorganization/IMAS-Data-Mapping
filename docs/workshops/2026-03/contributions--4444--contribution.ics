@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CERN//INDICO//EN
+BEGIN:VEVENT
+SUMMARY:Visual inspection of IMAS data (with IDStools\, IMAS-ParaView\, IB
+ EX)
+DTSTART:20260319T080000Z
+DTEND:20260319T083000Z
+DTSTAMP:20261109T104200Z
+UID:indico-contribution-4444@indico.iter.org
+DESCRIPTION:Speakers: Olivier Hoenen (ITER Organization (IO))\, Paulo Abre
+ u (ITER Organization (IO))\n\nhttps://indico.iter.org/event/732/contributi
+ ons/4444/
+LOCATION:72/3017 (ITER Organization)
+RELATED-TO:indico-event-732@indico.iter.org
+URL:https://indico.iter.org/event/732/contributions/4444/
+END:VEVENT
+END:VCALENDAR
