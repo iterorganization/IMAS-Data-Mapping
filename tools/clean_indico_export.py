@@ -44,6 +44,17 @@ REG_TEXT_RE = re.compile(r'\s*Registration Registration is[^"]*?(?=")')
 LOGIN_TITLE_RE = re.compile(r'\s*title="Log in to see their email address"')
 HREF_RE = re.compile(r'(href|src)="([^"]*)"')
 MATERIAL_HREF_RE = re.compile(r'href="(material/[^"]+)"')
+# Pages/files of the export that are not published: the scientific programme
+# (unused) and the iCalendar exports (pointless for a past event, and full of
+# links to the Indico server).
+SKIPPED_FILES = ("program.html", "program.pdf")
+SKIPPED_SUFFIXES = (".ics",)
+PROGRAM_MENU_RE = re.compile(
+    r'<li class="menuConfTitle[^"]*">\s*<a href="program\.html"\s*>[^<]*</a>\s*')
+ICS_LINK_RE = re.compile(r'\s*<a href="[^"]*\.ics"[^>]*></a>')
+# Metadata pointing back to the Indico server (logo, canonical event URL).
+OG_IMAGE_RE = re.compile(r'\s*<meta property="og:image" content="[^"]*">')
+LD_JSON_URL_RE = re.compile(r',"url":"[^"]*"(?=}\s*</script>)')
 
 BANNER = (
     '<div class="archive-banner" style="padding:0.5em 1em;background:#eef3f8;'
@@ -87,6 +98,10 @@ def clean_page(text, release_url, assets, src_dir, out_assets):
     text = REG_SECTION_RE.sub("", text)
     text = REG_TEXT_RE.sub("", text)
     text = LOGIN_TITLE_RE.sub("", text)
+    text = PROGRAM_MENU_RE.sub("", text)
+    text = ICS_LINK_RE.sub("", text)
+    text = OG_IMAGE_RE.sub("", text)
+    text = LD_JSON_URL_RE.sub("", text)
     text = text.replace('<main class="main">', BANNER + '<main class="main">', 1)
     return text
 
@@ -124,8 +139,13 @@ def main():
             sys.exit(f"{out} exists and is not empty")
         out.mkdir(parents=True, exist_ok=True)
 
-    shutil.copytree(src, args.out_site, dirs_exist_ok=True,
-                    ignore=lambda d, names: ["material"] if Path(d) == src else [])
+    def ignore(d, names):
+        if Path(d) != src:
+            return []
+        return [n for n in names if n == "material" or n in SKIPPED_FILES
+                or n.endswith(SKIPPED_SUFFIXES)]
+
+    shutil.copytree(src, args.out_site, dirs_exist_ok=True, ignore=ignore)
 
     release_url = f"https://github.com/{args.repo}/releases/download/{args.release_tag}"
     assets = {}
