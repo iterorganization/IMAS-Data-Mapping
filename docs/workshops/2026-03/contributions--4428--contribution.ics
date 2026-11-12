@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CERN//INDICO//EN
+BEGIN:VEVENT
+SUMMARY:EAST
+DTSTART:20260316T101500Z
+DTEND:20260316T102000Z
+DTSTAMP:20261109T104200Z
+UID:indico-contribution-4428@indico.iter.org
+DESCRIPTION:Speakers: Ting Lan (Institute of plasma physics\, Chinese Acad
+ emy of Sciences)\, Zhi YU (ASSIPP)\, Xiang Liu (ASIPP (CN))\n\nhttps://ind
+ ico.iter.org/event/732/contributions/4428/
+LOCATION:72/3017 (ITER Organization)
+RELATED-TO:indico-event-732@indico.iter.org
+URL:https://indico.iter.org/event/732/contributions/4428/
+END:VEVENT
+END:VCALENDAR

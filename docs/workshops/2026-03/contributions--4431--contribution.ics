@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CERN//INDICO//EN
+BEGIN:VEVENT
+SUMMARY:TCV
+DTSTART:20260316T104000Z
+DTEND:20260316T104500Z
+DTSTAMP:20261109T104200Z
+UID:indico-contribution-4431@indico.iter.org
+DESCRIPTION:Speakers: Michele Marin (EPFL-SPC)\, Cenk Yildiz (Swiss Plasma
+  Center (SPC) (EU))\n\nhttps://indico.iter.org/event/732/contributions/443
+ 1/
+LOCATION:72/3017 (ITER Organization)
+RELATED-TO:indico-event-732@indico.iter.org
+URL:https://indico.iter.org/event/732/contributions/4431/
+END:VEVENT
+END:VCALENDAR

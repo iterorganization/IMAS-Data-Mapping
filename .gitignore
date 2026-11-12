@@ -1,0 +1,3 @@
+# Indico offline exports (kept outside git, see tools/README.md)
+*.zip
+__pycache__/

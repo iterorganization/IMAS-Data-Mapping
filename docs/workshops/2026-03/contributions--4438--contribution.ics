@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CERN//INDICO//EN
+BEGIN:VEVENT
+SUMMARY:Current status and open sourcing
+DTSTART:20260316T132500Z
+DTEND:20260316T141000Z
+DTSTAMP:20261109T104200Z
+UID:indico-contribution-4438@indico.iter.org
+DESCRIPTION:Speakers: Olivier Hoenen (ITER Organization (IO))\n\nhttps://i
+ ndico.iter.org/event/732/contributions/4438/
+LOCATION:72/3017 (ITER Organization)
+RELATED-TO:indico-event-732@indico.iter.org
+URL:https://indico.iter.org/event/732/contributions/4438/
+END:VEVENT
+END:VCALENDAR

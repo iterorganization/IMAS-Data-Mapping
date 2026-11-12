@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CERN//INDICO//EN
+BEGIN:VEVENT
+SUMMARY:Lessons learned and discussions
+DTSTART:20260317T091000Z
+DTEND:20260317T093000Z
+DTSTAMP:20261109T104200Z
+UID:indico-contribution-4443@indico.iter.org
+DESCRIPTION:https://indico.iter.org/event/732/contributions/4443/
+LOCATION:72/3017 (ITER Organization)
+RELATED-TO:indico-event-732@indico.iter.org
+URL:https://indico.iter.org/event/732/contributions/4443/
+END:VEVENT
+END:VCALENDAR

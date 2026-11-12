@@ -7,6 +7,8 @@ Whenever possible, we will also try to share pointers to open-accessible dataset
 
 You can find some additional resources and information on our regular online discussion meetings in the [wiki](https://github.com/iterorganization/IMAS-Data-Mapping/wiki).
 
+The agenda and presentations of the IMAS Data Mapping workshops are available on the [workshops page](https://iterorganization.github.io/IMAS-Data-Mapping/) (sources in [`docs/`](docs/), see [`tools/README.md`](tools/README.md) to add a new edition).
+
 If you want to update the information for a given experiment or if you find issues in the mapped data, please 
 first take look at the [contribution guidelines](CONTRIBUTING.md).
 

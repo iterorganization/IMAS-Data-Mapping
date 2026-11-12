@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CERN//INDICO//EN
+BEGIN:VEVENT
+SUMMARY:Working groups
+DTSTART:20260316T150000Z
+DTEND:20260319T160000Z
+DTSTAMP:20261109T104200Z
+UID:indico-session-1043@indico.iter.org
+DESCRIPTION:https://indico.iter.org/event/732/sessions/1043/
+LOCATION:72/3017 (ITER Organization)
+RELATED-TO:indico-event-732@indico.iter.org
+URL:https://indico.iter.org/event/732/sessions/1043/
+END:VEVENT
+END:VCALENDAR

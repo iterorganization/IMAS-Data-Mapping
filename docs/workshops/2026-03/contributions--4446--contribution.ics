@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CERN//INDICO//EN
+BEGIN:VEVENT
+SUMMARY:Other approaches and discussions
+DTSTART:20260319T090000Z
+DTEND:20260319T093000Z
+DTSTAMP:20261109T104200Z
+UID:indico-contribution-4446@indico.iter.org
+DESCRIPTION:https://indico.iter.org/event/732/contributions/4446/
+LOCATION:72/3017 (ITER Organization)
+RELATED-TO:indico-event-732@indico.iter.org
+URL:https://indico.iter.org/event/732/contributions/4446/
+END:VEVENT
+END:VCALENDAR

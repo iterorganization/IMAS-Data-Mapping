@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CERN//INDICO//EN
+BEGIN:VEVENT
+SUMMARY:Magnetic equilibrium reconstruction with EFIT++
+DTSTART:20260318T080000Z
+DTEND:20260318T083000Z
+DTSTAMP:20261109T104200Z
+UID:indico-contribution-4447@indico.iter.org
+DESCRIPTION:Speakers: Paulo Abreu (ITER Organization (IO))\, Leonor Roque 
+ (IST)\n\nhttps://indico.iter.org/event/732/contributions/4447/
+LOCATION:72/3017 (ITER Organization)
+RELATED-TO:indico-event-732@indico.iter.org
+URL:https://indico.iter.org/event/732/contributions/4447/
+END:VEVENT
+END:VCALENDAR
