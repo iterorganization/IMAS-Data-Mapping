@@ -34,8 +34,8 @@ download URLs.
    - copies the attachments to the assets folder under URL-safe names
      (`<attachment id>-<name>.<ext>`) and points the page links at
      `https://github.com/iterorganization/IMAS-Data-Mapping/releases/download/workshop-<YYYY-MM>/<name>`;
-   - leaves out the scientific programme (`program.html/.pdf`) and the `.ics`
-     calendar exports, and their links;
+   - leaves out the scientific programme (`program.html`), the `.ics` calendar
+     exports and the PDF exports of the timetable, and their links/buttons;
    - removes the "Registration" section of the event description, the Indico
      header toolbar and footer (login, timezone, language, management links) and
      adds a banner linking back to the list of editions;
