@@ -184,7 +184,6 @@
             
         </div>
         <div class="group">
-            <a href="sessions--1043--session-timetable.pdf" class="i-button icon-file-pdf" title="Export to PDF"></a>
                 
         </div>
     </div>
@@ -306,6 +305,7 @@ FRANCE
                 extraArgs = [layout];
             
 
+            if (window.DisplayTimeTable) { DisplayTimeTable.prototype.pdf = function() {}; }
             var timetableArgs = [
                 null,
                 {},
@@ -320,6 +320,16 @@ FRANCE
                 var timetable = new (Function.prototype.bind.apply(timetableClass, timetableArgs));
                 $('#timetable').html(timetable.draw());
                 timetable.postDraw();
+                // Archived copy: no PDF export of the timetable.
+                $('#timetable').find('*').filter(function() {
+                    return this.children.length === 0 && $.trim($(this).text()) === 'PDF';
+                }).each(function() {
+                    var el = $(this);
+                    while (el.parent().length && $.trim(el.parent().text()) === 'PDF') {
+                        el = el.parent();
+                    }
+                    el.hide();
+                });
             } else {
                 $('#timetable').html($T("The timetable has not been filled yet."));
             }

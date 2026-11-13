@@ -45,13 +45,35 @@ LOGIN_TITLE_RE = re.compile(r'\s*title="Log in to see their email address"')
 HREF_RE = re.compile(r'(href|src)="([^"]*)"')
 MATERIAL_HREF_RE = re.compile(r'href="(material/[^"]+)"')
 # Pages/files of the export that are not published: the scientific programme
-# (unused) and the iCalendar exports (pointless for a past event, and full of
-# links to the Indico server).
-SKIPPED_FILES = ("program.html", "program.pdf")
-SKIPPED_SUFFIXES = (".ics",)
+# (unused), the iCalendar exports (pointless for a past event, and full of
+# links to the Indico server) and the PDF exports of the timetable (no
+# generated PDFs in git).
+SKIPPED_FILES = ("program.html",)
+SKIPPED_SUFFIXES = (".ics", ".pdf")
 PROGRAM_MENU_RE = re.compile(
     r'<li class="menuConfTitle[^"]*">\s*<a href="program\.html"\s*>[^<]*</a>\s*')
 ICS_LINK_RE = re.compile(r'\s*<a href="[^"]*\.ics"[^>]*></a>')
+# "Export to PDF" icon buttons (local .pdf links without content) and the PDF
+# references in the timetable data.
+PDF_BUTTON_RE = re.compile(r'\s*<a href="(?!https?:)[^"]*\.pdf"[^>]*>\s*</a>')
+TT_PDF_JSON_RE = re.compile(r'"pdf":"[^"]*\.pdf"')
+# The JS timetable draws its own "PDF" toolbar button: neutralise its action
+# and hide it once the timetable is drawn.
+TT_DRAW = "timetable.postDraw();"
+TT_HIDE_PDF = (TT_DRAW + """
+                // Archived copy: no PDF export of the timetable.
+                $('#timetable').find('*').filter(function() {
+                    return this.children.length === 0 && $.trim($(this).text()) === 'PDF';
+                }).each(function() {
+                    var el = $(this);
+                    while (el.parent().length && $.trim(el.parent().text()) === 'PDF') {
+                        el = el.parent();
+                    }
+                    el.hide();
+                });""")
+TT_ARGS = "var timetableArgs = ["
+TT_NOOP_PDF = ("if (window.DisplayTimeTable) { DisplayTimeTable.prototype.pdf = function() {}; }\n"
+               "            " + TT_ARGS)
 # Metadata pointing back to the Indico server (logo, canonical event URL).
 OG_IMAGE_RE = re.compile(r'\s*<meta property="og:image" content="[^"]*">')
 LD_JSON_URL_RE = re.compile(r',"url":"[^"]*"(?=}\s*</script>)')
@@ -100,6 +122,9 @@ def clean_page(text, release_url, assets, src_dir, out_assets):
     text = LOGIN_TITLE_RE.sub("", text)
     text = PROGRAM_MENU_RE.sub("", text)
     text = ICS_LINK_RE.sub("", text)
+    text = PDF_BUTTON_RE.sub("", text)
+    text = TT_PDF_JSON_RE.sub('"pdf":null', text)
+    text = text.replace(TT_DRAW, TT_HIDE_PDF).replace(TT_ARGS, TT_NOOP_PDF)
     text = OG_IMAGE_RE.sub("", text)
     text = LD_JSON_URL_RE.sub("", text)
     text = text.replace('<main class="main">', BANNER + '<main class="main">', 1)
